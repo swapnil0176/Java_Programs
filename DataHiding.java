@@ -3,7 +3,7 @@ package com.AngularJava.DailyPrograms.Java_Programs;
 public class DataHiding {
     private long aadhar_no,account_no;//achieving encapsulation variables make private
     private String pan_no;
-    //geters and setters are use to access the private variables
+    //getters and setters are use to access the private variables
     public long getAadhar_no(){
         return aadhar_no;
     }
@@ -24,11 +24,12 @@ public class DataHiding {
     }
     public static void main(String[] args) {
         DataHiding data=new DataHiding();
+        //for setting data setters method is use;
         data.setAadhar_no(633868111);// set the aadhar value
         data.setPan_no("BFJP87T");
         data.setAccount_no(602048483);
         System.out.println("All data are sets");
-        //for accessing data geter method is use;
+        //for accessing data getter method is use;
         System.out.println("Addhar no:- "+data.getAadhar_no());
         System.out.println("Pan no:- "+data.getPan_no());
         System.out.println("Account no:- "+data.getAccount_no());
